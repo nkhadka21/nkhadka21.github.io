@@ -5,152 +5,162 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Narayan Khadka</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<head>
+	<title>Narayan Khadka</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<style>
-		/* Profile photo in header: horizontally centered */
-		.profile-photo {
-			width: 120px;       
-			height: 120px;      
-			border-radius: 50%; 
-			object-fit: cover;  
-			display: block;
-			margin: 0 auto 15px auto; 
-		}
+	<style>
+	/* Full-page background */
+	body {
+	    margin: 0;
+	    padding: 0;
+	    background: url('images/bgfront.jpg') no-repeat center center fixed;
+	    background-size: cover;
+	}
 
-		/* Header background for front page */
-		#header {
-			background: url('images/bgfront.jpg') no-repeat center center;
-			background-size: cover;
-			position: relative;
-			color: white;       
-		}
+	/* Optional overlay for readability */
+	body::before {
+	    content: "";
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.4);
+	    z-index: 0;
+	}
 
-		/* Optional: add slight overlay to make text more readable */
-		#header::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.4); 
-			z-index: 0;
-		}
+	/* Header full page */
+	#header {
+	    height: 100vh; /* Full viewport height */
+	    display: flex;
+	    justify-content: center; /* Center horizontally */
+	    align-items: center;     /* Center vertically */
+	    flex-direction: column;
+	    position: relative;
+	    color: white;
+	    text-align: center;
+	}
 
-		/* Make header content above overlay */
-		#header .content .inner {
-			position: relative;
-			z-index: 1;
-			text-align: center;
-			padding: 60px 20px; 
-		}
-		</style>
-	</head>
-	<body class="is-preload">
+	/* Make header content above overlay */
+	#header .content .inner {
+	    position: relative;
+	    z-index: 1;
+	}
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+	/* Profile photo in header */
+	.profile-photo {
+	    width: 150px;
+	    height: 150px;
+	    border-radius: 50%;
+	    object-fit: cover;
+	    margin-bottom: 20px;
+	}
+	</style>
+</head>
+<body class="is-preload">
 
-			<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<div class="inner">
-						<img src="images/myphoto.jpg" alt="Narayan Khadka" class="profile-photo" />
-						<h1>Dr. Narayan Khadka</h1>
-						<p>Postdoctoral Researcher | Cosmology | Astrophysics | LSST-DESC</p>
-						<p>Welcome to my academic website. Explore my research, publications, and contact information below.</p>
-					</div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="content">
+				<div class="inner">
+					<!-- Profile photo -->
+					<img src="images/myphoto.jpg" alt="Narayan Khadka" class="profile-photo" />
+					<h1>Dr. Narayan Khadka</h1>
+					<p>Postdoctoral Researcher | Cosmology | Astrophysics | LSST-DESC</p>
+					<p>Welcome to my academic website. Explore my research, publications, and contact information below.</p>
 				</div>
-				<nav>
-					<ul>
-						<li><a href="#intro">Intro</a></li>
-						<li><a href="#research">Research</a></li>
-						<li><a href="#cv">CV</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-
-			<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-				<article id="intro">
-					<h2 class="major">Hello, I’m Narayan Khadka</h2>
-					<span class="image main"><img src="images/pic01.jpg" alt="Narayan Khadka" /></span>
-					<p>I am a postdoctoral researcher specializing in strong lensing simulations and cosmology. This site highlights my research, projects, and ways to get in touch.</p>
-				</article>
-
-				<!-- Research -->
-				<article id="research">
-					<h2 class="major">Research</h2>
-					<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-					<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-				</article>
-
-				<!-- CV -->
-				<article id="cv">
-					<h2 class="major">CV</h2>
-					<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-					<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-				</article>
-
-				<!-- Contact -->
-				<article id="contact">
-					<h2 class="major">Contact</h2>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Reset" /></li>
-						</ul>
-					</form>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</article>
-
 			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#research">Research</a></li>
+					<li><a href="#cv">CV</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">&copy; Narayan Khadka. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</footer>
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Hello, I’m Narayan Khadka</h2>
+				<span class="image main"><img src="images/pic01.jpg" alt="Narayan Khadka" /></span>
+				<p>I am a postdoctoral researcher specializing in strong lensing simulations and cosmology. This site highlights my research, projects, and ways to get in touch.</p>
+			</article>
+
+			<!-- Research -->
+			<article id="research">
+				<h2 class="major">Research</h2>
+				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+				<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+			</article>
+
+			<!-- CV -->
+			<article id="cv">
+				<h2 class="major">CV</h2>
+				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</article>
 
 		</div>
 
-		<!-- BG -->
-		<div id="bg"></div>
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Narayan Khadka. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
