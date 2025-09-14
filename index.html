@@ -1,149 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Academic Website</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      height: 100%;
-      scroll-behavior: smooth;
-    }
+<!DOCTYPE HTML>
+<!--
+	Narayan by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Narayan Khadka</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    header {
-      background: url('background.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
+		<style>
+		/* Profile photo in header: horizontally centered */
+		.profile-photo {
+			width: 120px;       /* Adjust size as needed */
+			height: 120px;      /* Adjust size as needed */
+			border-radius: 50%; /* Circular */
+			object-fit: cover;  /* Crop nicely */
+			display: block;
+			margin: 0 auto 15px auto; /* Center horizontally, space below */
+		}
 
-    header img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-    }
+		/* Header background for front page */
+		#header {
+			background: url('images/bgfront.jpg') no-repeat center center;
+			background-size: cover;
+			position: relative;
+			color: white;       /* Ensures text is visible on background */
+		}
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
-    }
+		/* Optional: add slight overlay to make text more readable */
+		#header::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+			z-index: 0;
+		}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 18px;
-    }
+		/* Make header content above overlay */
+		#header .content .inner {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			padding: 60px 20px; /* space from top and sides */
+		}
+		</style>
+	</head>
+	<body class="is-preload">
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+		<!-- Wrapper -->
+		<div id="wrapper">
 
-    section {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 50px;
-    }
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<!-- Profile photo directly in content -->
+						<img src="images/myphoto.jpg" alt="Narayan Khadka" class="profile-photo" />
+						<h1>Dr. Narayan Khadka</h1>
+						<p>Postdoctoral Researcher | Cosmology | Astrophysics | LSST-DESC</p>
+						<p>Welcome to my academic website. Explore my research, publications, and contact information below.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#teaching">Teaching</a></li>
+						<li><a href="#software">Software</a></li>
+						<li><a href="#cv">CV</a></li>
+						<li><a href="#side-projects">Side Projects</a></li>
+					</ul>
+				</nav>
+			</header>
 
-    section:nth-child(even) {
-      background: #f4f4f4;
-    }
+			<!-- Main -->
+			<div id="main">
 
-    section h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
+				<!-- Intro -->
+				<article id="intro">
+					<h2 class="major">Hello, I’m Narayan Khadka</h2>
+					<span class="image main"><img src="images/pic01.jpg" alt="Narayan Khadka" /></span>
+					<p>I am a postdoctoral researcher specializing in strong lensing simulations and cosmology. This site highlights my research, projects, and ways to get in touch.</p>
+				</article>
 
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
+				<!-- Research -->
+				<article id="research">
+					<h2 class="major">Research</h2>
+					<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+				</article>
 
-    section p {
-      max-width: 800px;
-      text-align: center;
-      font-size: 1.2em;
-    }
+				<!-- Teaching -->
+				<article id="teaching">
+					<h2 class="major">Teaching</h2>
+					<p>Details about teaching experience, courses taught, and related activities.</p>
+				</article>
 
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="#intro">Intro</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#software">Software</a>
-    <a href="#cv">CV</a>
-    <a href="#side-projects">Side Projects</a>
-  </nav>
+				<!-- Software -->
+				<article id="software">
+					<h2 class="major">Software</h2>
+					<p>Details about software tools or packages developed or contributed to.</p>
+				</article>
 
-  <header>
-    <div>
-      <img src="me.jpg" alt="My Photo" />
-      <h1>Welcome to My Academic Website</h1>
-    </div>
-  </header>
+				<!-- CV -->
+				<article id="cv">
+					<h2 class="major">CV</h2>
+					<p>You can upload your CV as a PDF and link it here.</p>
+				</article>
 
-  <section id="intro">
-    <h1>Intro</h1>
-    <p>Brief introduction about yourself goes here.</p>
-  </section>
+				<!-- Side Projects -->
+				<article id="side-projects">
+					<h2 class="major">Side Projects</h2>
 
-  <section id="research">
-    <h1>Research</h1>
-    <p>Details about your research interests, publications, and projects.</p>
-  </section>
+					<h3>Paintings</h3>
+					<p><!-- Content for paintings goes here --></p>
 
-  <section id="teaching">
-    <h1>Teaching</h1>
-    <p>Information about your teaching experience, courses taught, and philosophy.</p>
-  </section>
+					<h3>Astro Images</h3>
+					<p><!-- Content for astro images goes here --></p>
+				</article>
 
-  <section id="software">
-    <h1>Software</h1>
-    <p>Details about software tools or packages you developed or contributed to.</p>
-  </section>
+			</div>
 
-  <section id="cv">
-    <h1>CV</h1>
-    <p>You can upload your CV as a PDF and link it here.</p>
-  </section>
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Narayan Khadka. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
 
-  <section id="side-projects">
-    <h1>Side Projects</h1>
+		</div>
 
-    <h2>Paintings</h2>
-    <p><!-- Add your painting content or gallery here --></p>
+		<!-- BG -->
+		<div id="bg"></div>
 
-    <h2>Astro Images</h2>
-    <p><!-- Add your astrophotography or astronomy-related images here --></p>
-  </section>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-  <footer>
-    <p>&copy; 2025 My Academic Website</p>
-  </footer>
-</body>
+	</body>
 </html>
