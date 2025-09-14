@@ -11,6 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+		/* Profile photo in header */
+		.profile-photo {
+			width: 120px;       /* Adjust size as needed */
+			height: 120px;      /* Adjust size as needed */
+			border-radius: 50%; /* Circular */
+			object-fit: cover;  /* Crop nicely */
+			display: block;
+			margin: 0 auto 15px auto; /* Center above name */
+		}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,7 +32,9 @@
 			<!-- Header -->
 			<header id="header">
 				<div class="logo">
-					<span class="icon fa-gem"></span>
+					<!-- Replace diamond icon with your circular photo -->
+					<!-- Upload your photo as 'myphoto.jpg' in the 'images/' folder -->
+					<img src="images/myphoto.jpg" alt="Narayan Khadka" class="profile-photo" />
 				</div>
 				<div class="content">
 					<div class="inner">
@@ -35,7 +49,6 @@
 						<li><a href="#work">Work</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
-						<!--<li><a href="#elements">Elements</a></li>-->
 					</ul>
 				</nav>
 			</header>
