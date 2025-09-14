@@ -22,6 +22,34 @@
 			display: block;
 			margin: 0 auto 15px auto; /* Center horizontally, space below */
 		}
+
+		/* Header background for front page */
+		#header {
+			background: url('images/bgfront.jpg') no-repeat center center;
+			background-size: cover;
+			position: relative;
+			color: white;       /* Ensures text is visible on background */
+		}
+
+		/* Optional: add slight overlay to make text more readable */
+		#header::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+			z-index: 0;
+		}
+
+		/* Make header content above overlay */
+		#header .content .inner {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			padding: 60px 20px; /* space from top and sides */
+		}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -127,4 +155,3 @@
 
 	</body>
 </html>
-
