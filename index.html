@@ -30,7 +30,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(0,0,0,0.4); /* semi-transparent dark overlay */
+			background: rgba(0,0,0,0.4);
 			z-index: 0;
 		}
 
@@ -51,7 +51,7 @@
 
 		/* Full-page sections */
 		#main article {
-			height: 100vh; /* full screen per section */
+			height: 100vh;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -60,12 +60,13 @@
 			padding: 2em;
 		}
 
-		/* Different subtle backgrounds per section for separation */
+		/* Different subtle backgrounds per section */
 		#intro { background: #f9f9f9; }
 		#work { background: #efefef; }
+		#teaching { background: #f9f9f9; }
+		#software { background: #efefef; }
 		#about { background: #f9f9f9; }
 		#contact { background: #efefef; }
-
 		</style>
 	</head>
 	<body class="is-preload">
@@ -87,6 +88,8 @@
 					<ul>
 						<li><a href="#intro">Intro</a></li>
 						<li><a href="#work">Research</a></li>
+						<li><a href="#teaching">Teaching</a></li>
+						<li><a href="#software">Software</a></li>
 						<li><a href="#about">CV</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -109,6 +112,21 @@
 					<p>My research focuses on strong gravitational lensing, cosmology, and the LSST-DESC collaboration. 
 					I develop simulations and analysis pipelines to explore the nature of dark energy, dark matter, 
 					and the expansion rate of the universe.</p>
+				</article>
+
+				<!-- Teaching -->
+				<article id="teaching">
+					<h2 class="major">Teaching</h2>
+					<p>I enjoy mentoring and teaching students in physics and astronomy. 
+					My experience includes teaching undergraduate courses, leading workshops, and supervising student research projects.</p>
+				</article>
+
+				<!-- Software -->
+				<article id="software">
+					<h2 class="major">Software</h2>
+					<p>I develop and maintain software pipelines for strong lensing simulations and cosmological analyses. 
+					My contributions include the <strong>SLSim</strong> pipeline for simulating lens populations and training machine learning models 
+					for lens discovery and inference.</p>
 				</article>
 
 				<!-- CV -->
