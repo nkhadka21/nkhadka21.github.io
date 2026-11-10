@@ -196,6 +196,14 @@
       border-radius: 4px;
       box-sizing: border-box;
     }
+    .research-image-small {
+      display: block;
+      width: 60%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
     
     figcaption {
       margin-top: 10px;
@@ -374,7 +382,7 @@
           >
         
           <figcaption>
-            Reduced shear profile of a lens at
+            Fig. 1: Reduced shear profile of a lens at
             <em>z</em> = 0.5, illustrating the strong- and weak-lensing regimes.
             The light-blue shaded region on the right represents the weak-lensing
             regime, where galaxy shape measurements are generally available.
@@ -414,17 +422,32 @@
             mass distributions can reproduce the same strong-lensing observables while
             implying different time-delay distances. I investigate how galaxy-galaxy
             weak lensing can provide complementary information about the mass
-            distribution beyond the Einstein radius and help constrain this degeneracy.
+            distribution beyond the Einstein radius and help constrain this degeneracy 
+            (See Fig. 1 for an illustration of the strong and weak lensing regimes).
             One part of this work is to identify non-lens galaxies that match the
             properties and environments of strong-lens galaxies. Their stacked
             weak-lensing profiles can then be used to infer the population-level mass
             distribution and inform strong-lens mass models.
           </p>
+          <!-- Figure 1: Strong and weak lensing regimes -->
+          <figure class="research-figure">
+            <img
+              src="images/H0_forecast.png"
+              alt="Reduced shear profile illustrating strong, intermediate, and weak lensing regimes"
+              class="research-image-small"
+            >
+            <figcaption>
+              <strong>Figure 2.</strong> Forecast for the Hubble constant measurement precision achievable
+              by combining strong and weak lensing measurements from the LSST survey.
+            </figcaption>
+          </figure>
           <p>
             This approach connects strong-lensing measurements on small physical scales
-            with weak-lensing information at larger radii. It offers a route to
+            with weak-lensing information at large scales. It offers a route to
             controlling an important systematic in time-delay cosmography and improving
-            the reliability of cosmological constraints.
+            the reliability of cosmological constraints. We hope to achieve percent level
+            constrain on Hubble constant combining strong and weak lensing measurements from
+            LSST survey (Forecast are shown in Fig. 2).
           </p>
         </section>
 
