@@ -175,28 +175,34 @@
     .intro { font-size: 1.04rem; }
 
     .research-figure {
-      margin: 25px 0 28px;
-      padding: 16px;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      background: #fafbfc;
+    width: 100%;
+    max-width: 100%;
+    margin: 25px 0 28px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: #fafbfc;
+    box-sizing: border-box;
+    overflow: hidden;
     }
-
-    .figure-placeholder {
-      min-height: 150px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      color: var(--muted);
-      border: 1px dashed #cbd2d8;
+  
+    .research-image {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
       border-radius: 4px;
-      padding: 20px;
+      box-sizing: border-box;
     }
-
+    
     figcaption {
       margin-top: 10px;
       color: var(--muted);
       font-size: .9rem;
+      line-height: 1.6;
+      overflow-wrap: break-word;
     }
 
     .talk-list { padding-left: 22px; }
