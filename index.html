@@ -1,287 +1,300 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Narayan Khadka</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research of Narayan Khadka in strong gravitational lensing, cosmology, Rubin Observatory science, and high-redshift cosmology.">
+  <title>Research | Narayan Khadka</title>
+  <style>
+    :root {
+      --text: #252525;
+      --muted: #626b73;
+      --link: #1769aa;
+      --line: #e5e8eb;
+      --page: 900px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .header-inner, main, .footer-inner {
+      width: min(var(--page), calc(100% - 44px));
+      margin: 0 auto;
+    }
+    .header-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .site-name {
+      color: var(--text);
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { color: #39434c; font-size: .94rem; }
+    main { padding: 38px 0 72px; }
+    h1 {
+      margin: 0 0 4px;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 650;
+      letter-spacing: -.035em;
+    }
+    .page-subtitle { color: var(--muted); margin: 0 0 22px; }
+    .publication-link { margin: 0 0 30px; }
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 1.42rem;
+      line-height: 1.3;
+      font-weight: 650;
+    }
+    h3 {
+      margin: 34px 0 9px;
+      font-size: 1.23rem;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+    p { margin: 0 0 15px; }
+    ul { margin: 7px 0 20px; padding-left: 25px; }
+    li { margin: 3px 0; }
+    .intro { font-size: 1.04rem; }
+    .research-figure {
+      margin: 25px 0 28px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fafbfc;
+    }
+    .figure-placeholder {
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed #cbd2d8;
+      border-radius: 4px;
+      padding: 20px;
+    }
+    figcaption { margin-top: 10px; color: var(--muted); font-size: .9rem; }
+    .talk-list { padding-left: 22px; }
+    .topic { padding-top: 1px; }
+    .paper-list {
+      margin: 12px 0 22px;
+      padding: 12px 16px;
+      border-left: 3px solid #dce6ef;
+      background: #f8fafc;
+    }
+    .paper-list strong { display: block; margin-bottom: 4px; }
+    .paper-list ul { margin: 0; }
+    .small-note { color: var(--muted); font-size: .9rem; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); }
+    .footer-inner { padding: 20px 0 28px; font-size: .9rem; }
+    @media (max-width: 650px) {
+      .header-inner { align-items: flex-start; flex-direction: column; padding: 15px 0; gap: 8px; }
+      nav { gap: 8px 15px; }
+      main { padding-top: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Narayan Khadka</a>
+      <nav aria-label="Main navigation">
+        <!-- Update these links to match the pages on your personal website. -->
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="software.html">Software</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
 
-		<style>
-		/* Header full-page background */
-		#header {
-			height: 100vh; /* Full viewport height */
-			background: url('images/bgfront.jpg') no-repeat center center;
-			background-size: cover;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			color: white;
-			text-align: center;
-			position: relative;
-		}
-
-		/* Optional overlay for readability */
-		#header::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,0.4);
-			z-index: 0;
-		}
-
-		/* Header content above overlay */
-		#header .content .inner {
-			position: relative;
-			z-index: 1;
-		}
-
-		/* Profile photo in header */
-		.profile-photo {
-			width: 150px;
-			height: 150px;
-			border-radius: 50%;
-			object-fit: cover;
-			margin-bottom: 20px;
-		}
-
-		/* Full-page sections */
-		#main article {
-			height: 100vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			text-align: center;
-			padding: 2em;
-		}
-
-		/* Different subtle backgrounds per section */
-		#intro { background: #f9f9f9; }
-		#work { background: #efefef; }
-		#teaching { background: #f9f9f9; }
-		#software { background: #efefef; }
-		#about { background: #f9f9f9; }
-		#side-projects { background: #efefef; }
-		</style>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-		<div id="wrapper">
-
-			<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<div class="inner">
-						<img src="images/myphoto.jpg" alt="Narayan Khadka" class="profile-photo" />
-						<h1>Dr. Narayan Khadka</h1>
-						<p>Postdoctoral Researcher | Cosmology | Astrophysics | LSST-DESC</p>
-						<p>Welcome to my academic website. Explore my research, publications, and projects below.</p>
-					</div>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#intro">Intro</a></li>
-						<li><a href="#work">Research</a></li>
-						<li><a href="#teaching">Teaching</a></li>
-						<li><a href="#software">Software</a></li>
-						<li><a href="#about">CV</a></li>
-						<li><a href="#side-projects">Side Projects</a></li>
-					</ul>
-				</nav>
-			</header>
-
-			<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-				<article id="intro">
-					<h2 class="major">Hello, I’m Narayan Khadka</h2>
-					<p> I am a cosmologist interested in using gravitational lensing and other astrophysical observations to investigate fundamental questions about the Universe,
-						particularly its expansion history and the nature of dark energy. My research focuses on strong gravitational lensing, time-delay cosmography,
-						and the connection between strong and weak gravitational lensing to improve cosmological measurements. I am also interested in using quasars and
-						gamma-ray bursts as probes of the distant Universe.
-						I am actively involved in the Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST), contributing to observational operations and
-						the development of simulations and analysis pipelines for strong-lens discovery and characterization. I am a member of the LSST Dark Energy Science
-						Collaboration (LSST-DESC) and the Strong Lensing Science Collaboration (LSST-SLSC), where I contribute to developing tools and methods for Rubin-era
-						strong-lensing science. I also lead the development of SLSim, an open-source Python package for simulating realistic strong gravitational lens populations
-						and observations. I am currently a Rubin OS Postdoctoral Fellow at KIPAC/SLAC. Previously, I was a postdoctoral scholar at Stony Brook University. 
-						I received my Ph.D. from Kansas State University.
-						Outside research, I enjoy painting and playing soccer.</p>
-				</article>
-
-				
-<!-- Research -->
-<article id="work">
-    <h2 class="major">Research</h2>
-
-    <p>
-        My research focuses on observational cosmology, strong and weak gravitational
-        lensing, and the use of astrophysical probes to investigate the expansion history
-        of the Universe. I am particularly interested in developing new observational
-        techniques, simulations, and statistical methods to improve cosmological
-        measurements and address systematic uncertainties in current cosmological probes.
-        My work combines gravitational lensing, time-delay cosmography, and high-redshift
-        observations of quasars and gamma-ray bursts (GRBs), with a strong emphasis on
-        the scientific opportunities offered by the Vera C. Rubin Observatory's
-        Legacy Survey of Space and Time (LSST).
+  <main id="research">
+    <h1>Research</h1>
+    <p class="page-subtitle">Strong gravitational lensing · Cosmology · Rubin Observatory</p>
+    <p class="publication-link">
+      <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">
+        Publication list on NASA ADS
+      </a>
     </p>
 
-    <section>
-        <h3>Strong Gravitational Lensing and Cosmology</h3>
+    <h2>Science questions</h2>
+    <p class="intro">I use astrophysical observations to address fundamental questions about the Universe:</p>
+    <ul>
+      <li>How can independent cosmological probes improve measurements of the Hubble constant and the expansion history of the Universe?</li>
+      <li>How can strong and weak gravitational lensing be combined to reduce systematic uncertainties in time-delay cosmography?</li>
+      <li>What can gravitational lensing reveal about the distribution of dark matter in galaxies and clusters?</li>
+      <li>How can quasars and gamma-ray bursts extend cosmological distance measurements to the high-redshift Universe?</li>
+    </ul>
 
-        <p>
-            Strong gravitational lensing provides a powerful tool for studying the
-            distribution of dark matter in galaxies and clusters and for measuring
-            cosmological distances. My current research focuses on time-delay cosmography
-            using strongly lensed quasars and supernovae, which offers an independent
-            method of measuring the Hubble constant (<i>H</i><sub>0</sub>) and probing
-            the expansion history of the Universe.
-        </p>
+    <h2>Methodology</h2>
+    <ul>
+      <li>Strong gravitational lensing and time-delay cosmography</li>
+      <li>Galaxy-galaxy weak gravitational lensing</li>
+      <li>Population simulations and forward modeling</li>
+      <li>Statistical inference and cosmological parameter estimation</li>
+      <li>Machine learning for strong-lens discovery and classification</li>
+      <li>Scientific software and analysis-pipeline development</li>
+      <li>Quasars and gamma-ray bursts as high-redshift cosmological probes</li>
+    </ul>
 
-        <p>
-            A major challenge in time-delay cosmography is the mass-sheet degeneracy
-            (MSD), which introduces systematic uncertainties in the lens mass
-            distribution and inferred cosmological distances. I investigate how
-            galaxy-galaxy weak gravitational lensing can be combined with strong-lensing
-            observations to constrain the mass distribution beyond the Einstein radius
-            and break this degeneracy. In particular, I develop methods to identify
-            non-lens galaxies that closely match the properties and environments of
-            strong-lens galaxies, allowing their stacked weak-lensing signals to provide
-            independent constraints on the lens mass profiles. This approach has the
-            potential to improve the precision of time-delay cosmography and strengthen
-            constraints on cosmological parameters.
-        </p>
+    <p>
+      Below are the main research topics I work on, spanning strong-lensing
+      cosmography, Rubin Observatory science, and high-redshift cosmology.
+    </p>
+
+    <!-- Optional figure: replace this placeholder with your own research image.
+         Example:
+         <img src="images/your-lensing-figure.jpg" alt="Strong gravitational lens system"
+              style="width:100%; height:auto;">
+    -->
+    <figure class="research-figure">
+      <div class="figure-placeholder">
+        <div>
+          <strong>Optional research image</strong><br>
+          <span class="small-note">Add a lens image, SLSim simulation, or Rubin-related figure here.</span>
+        </div>
+      </div>
+      <figcaption>
+        Suggested figure: a representative strong-lensing system or simulated lens population.
+        Replace this placeholder with an image and a source credit before publishing, or remove
+        this figure block.
+      </figcaption>
+    </figure>
+
+    <h2>Research topics</h2>
+
+    <section class="topic" id="time-delay-cosmography">
+      <h3>Strong-lensing cosmography and the mass-sheet degeneracy</h3>
+      <p>
+        Strong gravitational lensing offers a way to measure cosmological distances
+        that is independent of several commonly used cosmological probes. In
+        particular, time delays between multiple images of strongly lensed quasars
+        and supernovae can be used to infer the time-delay distance and constrain
+        the Hubble constant (<i>H</i><sub>0</sub>). I am interested in developing
+        this technique into a precise and robust probe of the expansion history
+        of the Universe.
+      </p>
+      <p>
+        A central limitation is the mass-sheet degeneracy (MSD): different lens
+        mass distributions can reproduce the same strong-lensing observables while
+        implying different time-delay distances. I investigate how galaxy-galaxy
+        weak lensing can provide complementary information about the mass
+        distribution beyond the Einstein radius and help constrain this degeneracy.
+        One part of this work is to identify non-lens galaxies that match the
+        properties and environments of strong-lens galaxies. Their stacked
+        weak-lensing profiles can then be used to infer the population-level mass
+        distribution and inform strong-lens mass models.
+      </p>
+      <p>
+        This approach connects strong-lensing measurements on small physical scales
+        with weak-lensing information at larger radii. It offers a route to
+        controlling an important systematic in time-delay cosmography and improving
+        the reliability of cosmological constraints.
+      </p>
     </section>
 
-    <section>
-        <h3>Rubin Observatory and LSST Strong-Lensing Science</h3>
-
-        <p>
-            The Vera C. Rubin Observatory's LSST will provide an unprecedented
-            opportunity to discover and study large populations of strong gravitational
-            lenses. The survey is expected to reveal hundreds of strongly lensed quasars
-            and supernovae annually, opening new possibilities for time-delay cosmography,
-            galaxy evolution, and studies of dark matter.
-        </p>
-
-        <p>
-            I am actively involved in the LSST Dark Energy Science Collaboration
-            (LSST-DESC) and the LSST Strong Lensing Science Collaboration (LSST-SLSC),
-            contributing to the development and validation of methods for discovering
-            and characterizing strong gravitational lenses in Rubin data. My work
-            includes developing realistic simulated lens populations and images,
-            building analysis pipelines, and supporting the development of
-            machine-learning approaches for lens discovery and classification.
-        </p>
-
-        <p>
-            I led the development of <strong>SLSim</strong>, an open-source Python
-            package for simulating realistic populations of strong gravitational
-            lenses, including galaxy-galaxy lenses, lensed quasars, lensed supernovae,
-            and cluster lenses. These simulations support the development, training,
-            and validation of lens-finding algorithms and the preparation of the
-            strong-lensing community for Rubin-era discoveries. I am also involved
-            in Rubin Observatory observing operations, gaining direct experience
-            with the observational processes and data that will enable these
-            scientific investigations.
-        </p>
+    <section class="topic" id="rubin">
+      <h3>Preparing strong-lensing science for the Rubin Observatory</h3>
+      <p>
+        The Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST)
+        will repeatedly image a large fraction of the southern sky, creating an
+        exceptional data set for discovering variable and multiply imaged sources.
+        The expected discovery of large samples of lensed quasars and supernovae
+        will open new opportunities for time-delay cosmography, studies of dark
+        matter, and the characterization of lens-galaxy populations.
+      </p>
+      <p>
+        I contribute to strong-lens discovery and characterization within the
+        LSST Dark Energy Science Collaboration (LSST-DESC) and the LSST Strong
+        Lensing Science Collaboration (LSST-SLSC). My work includes developing
+        simulated lens populations and images, supporting the development and
+        validation of lens-finding methods, and building analysis pipelines for
+        Rubin-era studies. I am also involved in Rubin Observatory observing
+        operations, which gives me direct experience with the observational
+        processes that produce the survey data.
+      </p>
+      <p>
+        I led the development of <strong>SLSim</strong>, an open-source Python
+        package for simulating realistic strong-lens populations, including
+        galaxy-galaxy lenses, lensed quasars, lensed supernovae, and cluster
+        lenses. SLSim supports the generation of realistic populations and images
+        for the development, training, and validation of strong-lens discovery
+        and characterization methods. These simulations help prepare the
+        community to identify and study the strong-lensing systems that Rubin
+        will discover.
+      </p>
+      <p class="small-note">
+        Add a link to the SLSim repository and its publication here when you
+        finalize the page.
+      </p>
     </section>
 
-    <section>
-        <h3>High-Redshift Cosmology with Quasars and Gamma-Ray Bursts</h3>
-
-        <p>
-            During my Ph.D. at Kansas State University, my research focused on using
-            quasars and gamma-ray bursts as cosmological probes to investigate the
-            expansion history of the Universe at high redshifts. I studied the
-            nonlinear relationship between quasar X-ray and ultraviolet luminosities
-            and explored its application to constructing a quasar Hubble diagram.
-            This approach provides a potential complementary probe to Type Ia
-            supernovae, extending cosmological investigations to substantially
-            higher redshifts.
-        </p>
-
-        <p>
-            I also investigated the use of reverberation-mapped quasars and
-            gamma-ray bursts in combination with baryon acoustic oscillation (BAO)
-            measurements and direct measurements of the Hubble parameter,
-            <i>H</i>(<i>z</i>), to constrain cosmological models. These studies
-            explored the potential of quasars and gamma-ray bursts to extend
-            cosmological distance measurements to redshifts approaching
-            <i>z</i> &sim; 8, providing a means to investigate the expansion
-            history of the Universe beyond the redshift range accessible to
-            conventional supernova surveys.
-        </p>
+    <section class="topic" id="high-redshift">
+      <h3>High-redshift cosmology with quasars and gamma-ray bursts</h3>
+      <p>
+        My Ph.D. research at Kansas State University focused on using quasars
+        and gamma-ray bursts (GRBs) as cosmological probes. I studied the
+        nonlinear relation between quasar X-ray and ultraviolet luminosities
+        and its application to constructing a quasar Hubble diagram. Because
+        quasars can be observed at substantially higher redshifts than Type Ia
+        supernovae, this relation offers a possible way to extend cosmological
+        distance measurements to earlier epochs of cosmic history.
+      </p>
+      <p>
+        I also investigated cosmological constraints from reverberation-mapped
+        quasars and GRBs in combination with baryon acoustic oscillation (BAO)
+        measurements and direct measurements of the Hubble parameter,
+        <i>H</i>(<i>z</i>). This work explored the potential of these
+        astrophysical probes to extend distance measurements to redshifts
+        approaching <i>z</i> &sim; 8 and to test cosmological models over a
+        broader redshift range.
+      </p>
     </section>
 
-    <section>
-        <p>
-            Together, my research on gravitational lensing and high-redshift
-            astrophysical probes aims to develop complementary and independent
-            methods for measuring cosmological distances, constraining the
-            Hubble constant, and improving our understanding of the Universe's
-            expansion history.
-        </p>
-    </section>
+    <h2>Recorded talks</h2>
+    <p>
+      I give research talks on gravitational lensing, time-delay cosmography,
+      Rubin-era strong-lensing science, and observational cosmology.
+      Add links to selected seminar recordings or conference presentations
+      below as they become available.
+    </p>
+    <ul class="talk-list">
+      <li><span class="small-note">Add talk title, host/institution, date, and recording link.</span></li>
+      <li><span class="small-note">Add a second selected presentation if useful.</span></li>
+    </ul>
 
-</article>
+    <h2>Selected publications and software</h2>
+    <p>
+      For a complete and up-to-date list of publications, see my
+      <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">NASA ADS profile</a>.
+      My research software includes <strong>SLSim</strong>, developed to simulate
+      strong-lens populations and images for Rubin-era discovery and analysis.
+    </p>
+    <!-- Add direct links to your ADS author profile, SLSim repository, and key papers. -->
+  </main>
 
-				<!-- Teaching -->
-				<article id="teaching">
-					<h2 class="major">Teaching</h2>
-					<p>I enjoy mentoring and teaching students in physics and astronomy. 
-					My experience includes teaching undergraduate courses, leading workshops, and supervising student research projects.</p>
-				</article>
-
-				<!-- Software -->
-				<article id="software">
-					<h2 class="major">Software</h2>
-					<p>I develop and maintain software pipelines for strong lensing simulations and cosmological analyses. 
-					My contributions include the <strong>SLSim</strong> pipeline for simulating lens populations and training machine learning models 
-					for lens discovery and inference.</p>
-				</article>
-
-				<!-- CV -->
-				<article id="about">
-					<h2 class="major">CV</h2>
-					<p>Download my CV to learn more about my academic journey, publications, and professional experience.</p>
-					<p><a href="cv.pdf" target="_blank">Download CV</a></p>
-				</article>
-
-				<!-- Side Projects -->
-				<article id="side-projects">
-					<h2 class="major">Side Projects</h2>
-					<h3>Paintings</h3>
-					<p>Collection of my paintings and artwork.</p>
-
-					<h3>Astro Images</h3>
-					<p>A showcase of astrophotography and astronomy-related images.</p>
-				</article>
-
-			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">&copy; Narayan Khadka. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</footer>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; <span id="year">2026</span> Narayan Khadka</span>
+      <span> · Research</span>
+    </div>
+  </footer>
+</body>
 </html>
-
-
-
