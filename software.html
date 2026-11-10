@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scientific software, strong-lensing simulations, and open-source contributions by Narayan Khadka.">
+  <title>Software | Narayan Khadka</title>
+
+  <style>
+    :root {
+      --text: #252525;
+      --muted: #626b73;
+      --link: #1769aa;
+      --line: #e5e8eb;
+      --page: 900px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .header-inner, main, .footer-inner {
+      width: min(var(--page), calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .site-name {
+      color: var(--text);
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #39434c;
+      font-size: .94rem;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--link);
+      font-weight: 650;
+    }
+
+    main { padding: 38px 0 72px; }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 650;
+      letter-spacing: -.035em;
+    }
+
+    .page-subtitle {
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 1.42rem;
+      line-height: 1.3;
+      font-weight: 650;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.12rem;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    p { margin: 0 0 15px; }
+
+    ul {
+      margin: 7px 0 20px;
+      padding-left: 25px;
+    }
+
+    li { margin: 5px 0; }
+
+    .intro { font-size: 1.04rem; }
+
+    .content-section { margin-top: 25px; }
+
+    .small-note {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      padding: 20px 0 28px;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 650px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 8px;
+      }
+
+      nav { gap: 8px 15px; }
+
+      main { padding-top: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Narayan Khadka</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="software.html" aria-current="page">Software</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <h1>Software</h1>
+
+    <p class="page-subtitle">
+      Scientific software · Strong-lensing simulations · Open-source contributions
+    </p>
+
+    <section class="content-section">
+
+      <h2>Scientific Software and Community Development</h2>
+
+      <p class="intro">
+        I develop and contribute to open-source scientific software
+        and analysis pipelines for gravitational-lensing research.
+        My software work connects astrophysical modeling and
+        simulations with the practical needs of strong-lens discovery,
+        characterization, and cosmological analysis.
+      </p>
+
+    </section>
+
+    <section class="content-section">
+
+      <h2>SLSim: Strong-Lensing Simulation Software</h2>
+
+      <p>
+        I led the development of
+        <strong>SLSim</strong>, an open-source Python package for
+        simulating realistic strong-gravitational-lens populations
+        and images. The package supports several classes of systems,
+        including galaxy-galaxy lenses, lensed quasars, lensed
+        supernovae, and cluster lenses.
+      </p>
+
+      <p>
+        SLSim is designed to generate realistic lens populations
+        and observational data products for developing, training,
+        and validating strong-lens discovery and characterization
+        methods. It provides a flexible simulation framework for
+        studies ranging from lens population forecasts to the
+        preparation of algorithms for large imaging surveys such
+        as the Vera C. Rubin Observatory's Legacy Survey of Space
+        and Time (LSST).
+      </p>
+
+      <p>
+        SLSim is used in the LSST-DESC strong-lens finding challenge
+        to provide simulated populations and images for evaluating
+        lens-finding methods. Its development brings together
+        lens modeling, population distributions, image simulation,
+        and survey-related considerations.
+      </p>
+
+      <p>
+        <strong>Repository:</strong>
+        <a href="https://github.com/LSST-strong-lensing/slsim"
+           target="_blank" rel="noopener">
+          SLSim on GitHub
+        </a>
+      </p>
+
+    </section>
+
+    <section class="content-section">
+
+      <h2>Lenstronomy</h2>
+
+      <p>
+        I have contributed to
+        <a href="https://github.com/lenstronomy/lenstronomy"
+           target="_blank" rel="noopener">
+          Lenstronomy
+        </a>,
+        an open-source Python package for strong-gravitational-lens
+        modeling and analysis.
+      </p>
+
+      <p>
+        My contributions to the Lenstronomy ecosystem are part of
+        my broader involvement in developing and using community
+        tools for lens modeling, simulation, and scientific
+        inference. These tools are important for interpreting
+        strong-lensing observations and extracting information
+        about galaxy mass distributions and cosmological distances.
+      </p>
+
+    </section>
+
+    <section class="content-section">
+
+      <h2>LSST-DESC Analysis Pipelines</h2>
+
+      <p>
+        Within the LSST Dark Energy Science Collaboration
+        (LSST-DESC), I work on software and analysis workflows
+        that support strong-lens discovery and characterization
+        for Rubin-era data.
+      </p>
+
+      <p>
+        My work includes developing and validating simulation-based
+        methods, working with survey data products, and supporting
+        reproducible analysis pipelines. These activities help
+        connect simulated lens populations to the data-analysis
+        requirements of large imaging surveys.
+      </p>
+
+      <p>
+        I am also involved in the LSST-DESC strong-lens finding
+        challenge, which provides a framework for developing and
+        evaluating methods to identify strong gravitational lenses
+        in large astronomical imaging data sets.
+      </p>
+
+    </section>
+
+    <section class="content-section">
+
+      <h2>Software and Research Interests</h2>
+
+      <ul>
+        <li>Strong-lens population simulations and image generation</li>
+        <li>Strong-lens discovery, classification, and characterization</li>
+        <li>Gravitational-lens modeling and cosmological inference</li>
+        <li>Survey-scale data processing and analysis pipelines</li>
+        <li>Machine learning for astronomical image analysis</li>
+        <li>Reproducible scientific computing</li>
+        <li>Open-source scientific software development</li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; <span id="year">2026</span> Narayan Khadka</span>
+      <span> · Software</span>
+    </div>
+  </footer>
+
+</body>
+</html>
