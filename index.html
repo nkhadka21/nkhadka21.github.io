@@ -213,6 +213,44 @@
       overflow-wrap: break-word;
     }
 
+    .research-figure-pair {
+      width: 100%;
+      margin: 25px 0 28px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fafbfc;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    
+    .research-figure-pair .plot-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+      align-items: center;
+    }
+
+    .research-figure-pair img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    .research-figure-pair figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+
+@media (max-width: 650px) {
+  .research-figure-pair .plot-container {
+    grid-template-columns: 1fr;
+  }
+}
     .talk-list { padding-left: 22px; }
     .topic { padding-top: 1px; }
 
@@ -382,7 +420,7 @@
           >
         
           <figcaption>
-            Fig. 1: Reduced shear profile of a lens at
+            <strong>Figure 1.</strong> Reduced shear profile of a lens at
             <em>z</em> = 0.5, illustrating the strong- and weak-lensing regimes.
             The light-blue shaded region on the right represents the weak-lensing
             regime, where galaxy shape measurements are generally available.
@@ -447,7 +485,7 @@
             controlling an important systematic in time-delay cosmography and improving
             the reliability of cosmological constraints. We hope to achieve percent level
             constrain on Hubble constant combining strong and weak lensing measurements from
-            LSST survey (Forecast are shown in Fig. 2).
+            LSST survey (see Fig. 2 for the forecast).
           </p>
         </section>
 
@@ -461,15 +499,43 @@
             will open new opportunities for time-delay cosmography, studies of dark
             matter, and the characterization of lens-galaxy populations.
           </p>
+          
+          <!-- Figure 3: SLSim simulations -->
+          <figure class="research-figure-pair">
+          
+            <div class="plot-container">
+              <img
+                src="images/population_plot_4-2.png"
+                alt="First SLSim simulation plot"
+              >
+          
+              <img
+                src="images/lens_image.png"
+                alt="Second SLSim simulation plot"
+              >
+            </div>
+          
+            <figcaption>
+              <strong>Figure 3.</strong> Illustration of the capabilities of the strong lensing simulation
+              pipeline SLSIM. Left panel: Predicted distribution of strong lenses for galaxy-galaxy strong lenses,
+              lensed quasars and lensed supernovae with certain cuts in lens and source magnitudes. Right panel:
+              a sample of galaxy-galaxy strong lenses produced by SLSIM and injected into CosmoDC2. Such realistic
+              images can be used to train machine learning methods to find and model strong lenses, and to assess the
+              selection biased in the discovery and inference.
+            </figcaption>
+          
+          </figure>
+
           <p>
-            I contribute to strong-lens discovery and characterization within the
+            I contribute to strong-lens finding challenge within the
             LSST Dark Energy Science Collaboration (LSST-DESC) and the LSST Strong
-            Lensing Science Collaboration (LSST-SLSC). My work includes developing
-            simulated lens populations and images, supporting the development and
-            validation of lens-finding methods, and building analysis pipelines for
-            Rubin-era studies. I am also involved in Rubin Observatory observing
-            operations, which gives me direct experience with the observational
-            processes that produce the survey data.
+            Lensing Science Collaboration (LSST-SLSC). This work prepares for the
+            development of methods to find lenses from actual LSST survey data. 
+            My work includes developing simulated lens populations and images, 
+            supporting the development and validation of lens-finding methods, 
+            and building analysis pipelines for Rubin-era studies (see Fig. 3). I am also 
+            involved in Rubin Observatory observing operations, which gives me
+            direct experience with the observational processes that produce the survey data.
           </p>
           <p>
             I led the development of <strong>SLSim</strong>, an open-source Python
